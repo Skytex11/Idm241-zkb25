@@ -1,6 +1,157 @@
-main {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: ivory;
+@media only screen and (max-width: 768px) {
+    .trigger {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .item {
+        flex: 1 1 100%; /* Make each item take full width */
+    }
+
+  }
+
+
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+body {
+    color: #282828;
+    margin: 5px;
+    overflow-x: hidden;
+}
+
+#Banner {
+    background-color: #FF0000;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0%;
+    width: 100%;
 
 }
 
+#video {
+    text-align: center;
+
+}
+
+h2 {
+    margin: 60px;
+}
+
+
+.trigger {
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-radius: 5px;
+    margin: 60px;
+    padding: 30px;
+}
+
+
+.trigger,ul {
+    font-size: small;
+    list-style-type: square;
+
+}
+
+.trigger,.rules, li {
+    margin-bottom: 7px;
+}
+
+#trig-left {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 50px;
+    font-size: large;
+    box-shadow: 8px 5px 2px #FF0000;
+}
+
+#trig-right {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    padding: 50px;
+    font-size: large;
+    box-shadow: 8px 5px 2px #FF0000;
+}
+
+.rules {
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-radius: 5px;
+    margin: 60px;
+    padding: 30px;
+}
+
+#rules-top {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 8px 5px 2px #FF0000;
+
+
+}
+
+#rules-bottom {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 2px;
+    box-shadow: 8px 5px 2px #FF0000;
+
+    
+}
+
+
+.FEEDBACK {
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-radius: 5px;
+    margin: 60px;
+    padding: 30px;
+}
+
+#FB-top {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 8px 5px 2px #FF0000;
+
+
+}
+
+#FB-bottom {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 2px;
+    box-shadow: 8px 5px 2px #FF0000;
+
+    
+}
