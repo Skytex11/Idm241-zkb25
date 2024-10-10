@@ -1,15 +1,3 @@
-@media only screen and (max-width: 768px) {
-    .trigger {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .item {
-        flex: 1 1 100%; /* Make each item take full width */
-    }
-
-  }
-
-
 html {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -155,3 +143,14 @@ h2 {
 
     
 }
+
+@media only screen and (max-width: 768px) {
+    .trigger {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .item {
+        flex: 1 1 100%; /* Make each item take full width */
+    }
+}
+
