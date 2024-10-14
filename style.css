@@ -146,6 +146,7 @@ h2 {
 
 /* Like/dislike button*/
 
+
 .rate-container {
     margin: 0 auto;
     margin-top: 20;
@@ -185,22 +186,41 @@ h2 {
 
 }
 
+.post-rate:last-child .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+
+}
+
+.post-rate:last-child:hover .tooltiptext {
+    visibility: visible;
+    transition-delay:2s;
+  }
 
 .material-symbols-outlined {
     margin-right: 8px;
 }
 
+.material-icons {
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
 
 .post-rate:hover {
-    background-color: #b1b1b1;
+    background-color: #cfcfcf;
 }
-
-
-.post-rating-selected > .post-rating-button {
-    color: rgb(235, 32, 32);
-
-}
-
 
 
 @media only screen and (max-width: 768px) {
