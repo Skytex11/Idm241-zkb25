@@ -1,18 +1,35 @@
-// Default button
-
-
 let DislikeButton = document.querySelector('.post-rate:last-child');
 
-// mouse down action
-DislikeButton.addEventListener('mousedown', () => {
-    DislikeButton.style.backgroundColor = '#bbbbbb'; // change color to a darker gray
+let LikeButton = document.querySelector('.post-rate:not(:last-child)')
+
+
+
+
+
+// mouse down/up button
+
+
+
+let buttons = document.querySelectorAll('.post-rate')
+
+buttons.forEach(button => {
+
+    button.addEventListener('mousedown', () => {
+        button.style.backgroundColor = '#bbbbbb'; // Change color to a darker gray
+    });
+
+
+    button.addEventListener('mouseup', () => {
+        button.style.backgroundColor = ''; 
+    });
+
+
+    button.addEventListener('mouseleave', () => {
+        button.style.backgroundColor = ''; 
+    });
 });
 
-DislikeButton.addEventListener('mouseup', () => {
-    DislikeButton.style.backgroundColor = '';
-});
-
-// turns button black
+// turns button dislike black
 
 let DislikeIcon = document.querySelector('.post-rating-button.material-symbols-outlined');
 
@@ -32,6 +49,10 @@ DislikeButton.addEventListener('click', () => {
             
 
 });
+
+// Animation for like button
+
+
 
 
 
