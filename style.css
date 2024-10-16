@@ -29,6 +29,11 @@ body {
 
 }
 
+#YtLink {
+    color: #fff;
+
+}
+
 h2 {
     margin: 60px;
 }
@@ -180,6 +185,7 @@ h2 {
     height: 100%;
     width: 100%;
 
+
 }
 
 
@@ -210,15 +216,13 @@ h2 {
 
 }
 
-.post-rate:last-child:hover .tooltiptext {
+.post-rate:hover .tooltiptext {
     visibility: visible;
-    transition-delay:2s;
+    transition-delay: 2s;
   }
 
-  .post-rate:not(:last-child):hover .tooltiptext {
-    visibility: visible;
-    transition-delay:2s;
-  }
+
+
 
 
 .material-symbols-outlined {
