@@ -1,6 +1,6 @@
 let DislikeButton = document.querySelector('.post-rate:last-child');
 let LikeButton = document.querySelector('.post-rate:not(:last-child)')
-let LikeMessage = document.querySelector('.post-rating-selected.tooltiptext');
+let LikeMessage = document.querySelector('.tooltiptext.LikeTip');
 let dislike = false;
 let LikeCount = 0;
 let like = false;
@@ -45,6 +45,7 @@ DislikeButton.addEventListener('click', () => {
             like = false;
             LikeCount -= 1;
             LikeEle[0].textContent = LikeCount;
+            
 
 
         };
@@ -69,6 +70,8 @@ checkbox.addEventListener('change', function() {
     if (checkbox.checked) {
         LikeCount += 1; // Increment like count
         like = true;
+        LikeMessage.textContent = "Unlike";
+        
         
         if (dislike === true) {
             DislikeIcon.classList.remove('material-icons');
@@ -80,6 +83,8 @@ checkbox.addEventListener('change', function() {
     } else {
         LikeCount -= 1; // Decrement like count
         like = false;
+        LikeMessage.textContent = "I like this";
+        
     }
     LikeEle[0].textContent = LikeCount; // Update the displayed like count
 });

@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alpha Description</title>
+    <title>Alpha</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
         <div id = "Banner">
-            <h1>Alpha Description</h1> 
+            <h1>Alpha</h1> 
             <h2>YouTube's Thumbs Up Button</h2>
             <a href="https://www.youtube.com/watch?v=hDk51gq0w0k&t=1s" id="YtLink">Youtube Video Example</a>
         </div>
@@ -22,7 +25,7 @@
 <!-- like and dislike section-->
 
 <div class="rate-container">
-<div class="post-rate post-rating-selected">
+<div class="post-rate post-rating-selected like">
     <input type="checkbox" id="check">
     <label for="check">
         <svg class="unchecked" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -50,11 +53,11 @@
     </label>
 
     <span class="post-rating-like-count">0</span>
-    <span class="tooltiptext">I like this</span>
+    <span class="tooltiptext LikeTip">I like this</span>
 </div>
-<div class="post-rate">
+<div class="post-rate dislike">
     <span class="post-rating-button material-symbols-outlined">thumb_down</span>
-    <span class="tooltiptext">I dislike this</span>
+    <span class="tooltiptext DislikeTip">I dislike this</span>
 </div>
 
 </div>
@@ -118,7 +121,7 @@
                     <ul>
                         <li>Like Icon with container does an animation which involves
                             moving and changing colors. After short animation, Icon is black.</li>
-                        <li>Like count is incremented by one</li>
+                            <li>Like count is incremented by one</li>
                         <li>Database Like flag set to TRUE</li>
         
                     </ul>
