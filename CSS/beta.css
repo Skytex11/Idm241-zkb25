@@ -1,11 +1,13 @@
 @media only screen and (max-width: 768px) {
-    .trigger {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
+    
+    .body {
+        flex-direction: column;
+        width: auto;
+        height: auto;
 
-    .item {
-        flex: 1 1 100%; /* Make each item take full width */
+
     }
+      
 }
 
 
@@ -25,20 +27,23 @@ body {
 }
 
 h1{
-    margin-block-start: 0.67em;
-    margin-block-end: 0.17em;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.17em; */
     font-family: "Concert One", sans-serif;
 }
 
 h3 {
     margin-block-start: 0.17em;
     margin-block-end: 0.47em;
-    font-family: "Cantarell", sans-serif;
+    font-family: "Concert One", sans-serif;
 }
 
 .body {
     background-color: #79DBDC;
     width: 90%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content:space-around;
     height: 100%;
     margin: 0 auto; 
     margin-top: 50px;
@@ -46,114 +51,55 @@ h3 {
     border-radius: 19px;
     padding-bottom: 50px;
     overflow: hidden;
+
+
+
 }
 
-.trigger {
-    background-color: white;
-    width: 80%;
-    height: 250px;
-    margin: 0 auto; 
-    margin-top: 35px;
-    box-shadow: 6px 9px #004093;
-    border-radius: 7px;
+.body2{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
 
 }
 
-.trigger ul {
-    line-height: 1.8;
-    font-family: "Cantarell", sans-serif;
-}
 
 
+.box, .box2 {
 
-.trigger h3{
-    font-family: "Concert One", sans-serif;
-    font-size: 1.6rem;
-}
-
-
-
-.rules {
     background-color: white;
-    width: 80%;
-    height: 440px;
-    margin: 0 auto; 
+    width: 300px;
+    height: auto;
     margin-top: 35px;
+    margin-inline: 20px;
     box-shadow: 6px 9px #004093;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     text-align: left;
+    padding: 20px;
     overflow: hidden;
-    padding-bottom: 30px ;
-
 
 }
 
-ul.default li {
-    margin-bottom: 15px; /* Adjusts the spacing between items */
-}
-
-.default ul {
-    margin: 2px; /* Adjusts the spacing between items */
+.box h4,ul {
     font-family: "Cantarell", sans-serif;
-    padding-left: 40px;
-}
-
-.default h3{
-    font-family: "Concert One", sans-serif;
-    font-size: 1.6rem;
-    padding-left: 20px;
+    margin: 0;
     padding-top: 10px;
 }
 
-ul.active li {
-    margin-bottom: 15px; /* Adjusts the spacing between items */
+.box h3 {
+    font-size: 1.5rem;
 }
 
-.active ul {
-    margin: 2px; /* Adjusts the spacing between items */
-    font-family: "Cantarell", sans-serif;
-    padding-left: 40px;
+.box2 {
+    width: 100%;
+
+
 }
 
-.active h3{
-    font-family: "Concert One", sans-serif;
-    font-size: 1.6rem;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-ul.loops li {
-    margin-bottom: 15px; /* Adjusts the spacing between items */
-}
-
-.loops ul {
-    margin: 2px; /* Adjusts the spacing between items */
-    font-family: "Cantarell", sans-serif;
-    padding-left: 40px;
-}
-
-
-.loops {
-    background-color: white;
-    width: 80%;
-    height: 10%;
-    margin: 0 auto; 
-    margin-top: 35px;
-    box-shadow: 6px 9px #004093;
-    border-radius: 7px;
-    display: flex;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 30px ;
-
-
+ul li {
+    margin-bottom: 2px;
 }
 
 #YtLink {
