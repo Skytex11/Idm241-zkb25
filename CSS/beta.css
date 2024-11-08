@@ -1,6 +1,4 @@
 
-
-
 @media only screen and (max-width: 768px) {
     
     .body {
@@ -44,15 +42,15 @@ h3 {
 
 .body {
     background-color: #79DBDC;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: row wrap;
     justify-content:space-around;
     height: 100%;
     margin: 0 auto; 
     margin-top: 50px;
-    margin-bottom: 100px;
-    border-radius: 19px;
+    margin-bottom: 50px;
+    border-radius: 15px;
     padding-bottom: 50px;
     /* overflow: hidden; */
 
@@ -64,26 +62,33 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 
 }
 
 
 
 .box, .box2 {
-
     background-color: white;
     width: 300px;
     height: auto;
     margin-top: 35px;
     margin-inline: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
     box-shadow: 6px 9px #004093;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 20px;
-    overflow: hidden;
 
+}
+
+.box {
+    overflow-y: auto;
+    height: 420px;
 }
 
 .box h4,ul {
@@ -209,7 +214,11 @@ ul li {
 
 }
 
+.others p:hover{
+    border-radius: 11px;
+    background-color: #c5c5c5;
 
+}
 
 
 .icon:hover{
@@ -245,8 +254,8 @@ ul li {
     border: 1px solid rgb(169, 169, 169);
     /* transform: translateX(1.5rem); */
     opacity: 0; /* Initially hidden */
-    transition: opacity .2s ease; /* Smooth fade-in effect */
-    transition-delay: 1s;
+    transition: opacity .2s ease, visibility 0.1s ease; /* Smooth fade-in effect */
+    transition-delay: .5s;
 
 
 }
@@ -285,7 +294,9 @@ ul li {
 .icon:hover .tooltiptext {
     visibility: visible;
     opacity: 1; 
+    
   }
+
 
 
 
