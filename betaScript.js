@@ -1,5 +1,7 @@
 let email = document.getElementById("Message");
 
+let mailToolTip = document.getElementsByClassName("mailTool")
+
 
 
 let mail = document.querySelector('.mail');
@@ -73,6 +75,7 @@ mail.addEventListener('click', () => {
 
     } else {
         Message.textContent = "Page Refresh then Emails are presented";
+
 
      
     }
