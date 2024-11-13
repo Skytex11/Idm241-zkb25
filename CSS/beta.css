@@ -1,14 +1,31 @@
-
-@media only screen and (max-width: 768px) {
-    
+@media (max-width: 800px) {
     .body {
+        display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
+        align-items: center; /* Optional: centers items horizontally */
+        justify-content: center;
+        margin: 0 auto;
+      }
 
+      .body2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Optional: centers items horizontally */
+        justify-content: center;
+        margin: 0 auto;
+      }
 
-    }
-      
+      .banner {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 12px solid #004093;
+      }
+
+      .box2 {
+        min-width: 250px;
+        max-width: 400px;
+      }
 }
 
 
@@ -24,7 +41,7 @@ body {
 .banner {
     text-align: center;
     margin: 0 auto;
-    width: 36rem;
+    max-width: 450px;
     border-bottom: 12px solid #004093;
 }
 
@@ -64,17 +81,21 @@ h3 {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    align-items: center;
+
 
 }
 
 
 
-.box, .box2 {
+.box {
     background-color: white;
-    width: 300px;
+    min-width: 250px;
+    max-width: 300px;
     height: auto;
     margin-top: 35px;
     margin-inline: 20px;
+
     margin-left: 5px;
     margin-right: 10px;
     box-shadow: 6px 9px #004093;
@@ -102,7 +123,20 @@ h3 {
 }
 
 .box2 {
-    width: 100%;
+    background-color: white;
+    width: 750px;
+    height: auto;
+    margin-top: 35px;
+    margin-inline: 20px;
+
+    margin-left: 5px;
+    margin-right: 10px;
+    box-shadow: 6px 9px #004093;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
 
 
 }
