@@ -333,11 +333,10 @@ ul li {
 
 
 
-
-
-
-
-
+.mmm {
+    font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+    transition: font-variation-settings .5s ease; /* 0.5s or any duration you prefer */
+}
 
 
 
