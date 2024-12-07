@@ -20,7 +20,7 @@ let meetTog = false;
 
 
 
-let buttons = document.querySelectorAll('.icon, .md, .activeButton')
+let buttons = document.querySelectorAll('.icon, .md, .activeButton, .helpButton')
 console.log(buttons);
 
 
