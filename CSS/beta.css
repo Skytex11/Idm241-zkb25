@@ -176,6 +176,7 @@ ul li {
     display: flex;
     flex-direction: row;
     width: 70%;
+    max-width: 700px;
     height: 300px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -232,8 +233,18 @@ ul li {
     border: 1px solid rgb(60, 60, 60);
     background-color: #ededed;
     border-radius: 50px;
+    display: flex;
+    align-items: center; /* Centers vertically */
 }
 
+.magGlass {
+    padding-left: 10px;
+}
+
+.searchText {
+    font-size: .8rem;
+    color: #676666;
+}
 
 .activeButton {
     width: 6rem;
@@ -265,7 +276,7 @@ ul li {
     left: -30%; 
     opacity: 0; /* Hidden by default */
     display: none; /* Ensures it doesn't take up space */
-    transition: opacity 0.3s ease;
+    transition: opacity 0.6s ease;
     /* transform: translateX(1.5rem); */
     /* opacity: 0; /* Initially hidden */
     /* transition: opacity .2s ease, visibility 0.1s ease; /* Smooth fade-in effect */

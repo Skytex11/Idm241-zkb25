@@ -158,35 +158,54 @@ meet.addEventListener('click', () => {  // Select the element
 });
 
 
-ActiveButton.addEventListener("click", () => {
+
+ActiveButton.addEventListener("click", (event) => {
+    // Toggle visibility of the modal
+    ActiveToolBox.style.display = ActiveToolBox.classList.contains("visible") ? "none" : "block";
+    setTimeout(() => {
+        ActiveToolBox.classList.toggle("visible");
+    }, 0);
+    event.stopPropagation();
+});
+
+document.addEventListener("click", () => {
+    // Close the modal if it's visible
     if (ActiveToolBox.classList.contains("visible")) {
-      // Fade out
-      ActiveToolBox.classList.remove("visible");
-      setTimeout(() => {
-        ActiveToolBox.style.display = "none";
-      }, 300); // Matches the CSS transition duration
-    } else {
-      // Prepare to fade in
-      ActiveToolBox.style.display = "block";
-      setTimeout(() => {
-        ActiveToolBox.classList.add("visible");
-      }, 0); // Allows the display to render before transition
+        ActiveToolBox.classList.remove("visible");
+        setTimeout(() => {
+            ActiveToolBox.style.display = "none";
+        }, 600); 
     }
-  });
+});
+
+ActiveToolBox.addEventListener("click", (event) => {
+    
+    event.stopPropagation();
+});
 
 
-  helpButton.addEventListener("click", () => {
+
+
+  helpButton.addEventListener("click", (event) => {
+    // Toggle visibility of the modal
+    SupportToolBox.style.display = SupportToolBox.classList.contains("visible") ? "none" : "block";
+    setTimeout(() => {
+        SupportToolBox.classList.toggle("visible");
+    }, 0);
+    event.stopPropagation();
+});
+
+document.addEventListener("click", () => {
+    // Close the modal if it's visible
     if (SupportToolBox.classList.contains("visible")) {
-      // Fade out
-      SupportToolBox.classList.remove("visible");
-      setTimeout(() => {
-        SupportToolBox.style.display = "none";
-      }, 300); // Matches the CSS transition duration
-    } else {
-      // Prepare to fade in
-      SupportToolBox.style.display = "block";
-      setTimeout(() => {
-        SupportToolBox.classList.add("visible");
-      }, 0); // Allows the display to render before transition
+        SupportToolBox.classList.remove("visible");
+        setTimeout(() => {
+            SupportToolBox.style.display = "none";
+        }, 600); // Matches CSS transition
     }
-  });
+});
+
+SupportToolBox.addEventListener("click", (event) => {
+    // Prevent modal from closing when clicking inside
+    event.stopPropagation();
+});
