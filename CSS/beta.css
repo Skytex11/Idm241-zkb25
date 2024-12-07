@@ -312,7 +312,7 @@ ul li {
     background-color: #c5c5c5;
     top: 41px;
     left: -30%; 
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center; /* Centers vertically */
     justify-content: center;
@@ -335,9 +335,37 @@ ul li {
     display: block; /* Default display */
   }
 
+.SupportToolBox p {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.SupportTiptext {
+    z-index: 2;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(234, 234, 234);
+    text-align: left;
+    padding: 3px 0 5px ;
+    border-radius: 5px;
+    margin-left: 2rem;
+    border: 2px solid rgb(143, 143, 143);
+    position: absolute;
+    top: 50px;
+    right: -45px;
+    opacity: 0; /* Hidden by default */
+    display: none; /* Ensures it doesn't take up space */
+    transition: opacity 0.3s ease;
+   /* opacity: 0; Hidden by default */
+     /* Ensures it doesn't take up space */
 
 
+}
 
+.SupportTiptext.visible {
+    opacity: 1; /* Fully visible */
+    display: block; /* Becomes visible when the "visible" class is added */
+  }
 
 .email{
     display: flex;

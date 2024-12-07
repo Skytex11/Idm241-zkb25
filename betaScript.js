@@ -5,6 +5,9 @@ let mailToolTip = document.getElementsByClassName("mailTool")
 let ActiveButton = document.querySelector(".activeButton");
 let ActiveToolBox = document.querySelector(".Activetiptext");
 
+let helpButton = document.querySelector(".helpButton");
+let SupportToolBox = document.querySelector(".SupportTiptext");
+
 
 let mail = document.querySelector('.mail');
 let mailIcon =document.querySelector('.m5');
@@ -167,6 +170,23 @@ ActiveButton.addEventListener("click", () => {
       ActiveToolBox.style.display = "block";
       setTimeout(() => {
         ActiveToolBox.classList.add("visible");
+      }, 0); // Allows the display to render before transition
+    }
+  });
+
+
+  helpButton.addEventListener("click", () => {
+    if (SupportToolBox.classList.contains("visible")) {
+      // Fade out
+      SupportToolBox.classList.remove("visible");
+      setTimeout(() => {
+        SupportToolBox.style.display = "none";
+      }, 300); // Matches the CSS transition duration
+    } else {
+      // Prepare to fade in
+      SupportToolBox.style.display = "block";
+      setTimeout(() => {
+        SupportToolBox.classList.add("visible");
       }, 0); // Allows the display to render before transition
     }
   });
