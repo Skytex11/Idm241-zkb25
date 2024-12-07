@@ -2,6 +2,8 @@ let email = document.getElementById("Message");
 
 let mailToolTip = document.getElementsByClassName("mailTool")
 
+let ActiveButton = document.querySelector(".activeButton");
+let ActiveToolBox = document.querySelector(".Activetiptext");
 
 
 let mail = document.querySelector('.mail');
@@ -18,9 +20,7 @@ let meetTog = false;
 
 
 
-
-
-let buttons = document.querySelectorAll('.icon, .md')
+let buttons = document.querySelectorAll('.icon, .md, .activeButton')
 console.log(buttons);
 
 
@@ -29,7 +29,7 @@ buttons.forEach(button => {
 
     button.addEventListener('mousedown', () => {
         button.style.backgroundColor = '#b8b8b8';
-        button.style.borderRadius = "11px";
+        //button.style.borderRadius = "11px";
          // Change color to a darker gray
     });
     button.addEventListener('mouseup', () => {
@@ -155,5 +155,18 @@ meet.addEventListener('click', () => {  // Select the element
 });
 
 
-//Chat style="font-variation-settings: 'FILL' 1
-
+ActiveButton.addEventListener("click", () => {
+    if (ActiveToolBox.classList.contains("visible")) {
+      // Fade out
+      ActiveToolBox.classList.remove("visible");
+      setTimeout(() => {
+        ActiveToolBox.style.display = "none";
+      }, 300); // Matches the CSS transition duration
+    } else {
+      // Prepare to fade in
+      ActiveToolBox.style.display = "block";
+      setTimeout(() => {
+        ActiveToolBox.classList.add("visible");
+      }, 0); // Allows the display to render before transition
+    }
+  });

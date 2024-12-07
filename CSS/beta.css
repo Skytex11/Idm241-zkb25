@@ -1,32 +1,47 @@
-@media (max-width: 800px) {
-    .body {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Optional: centers items horizontally */
-        justify-content: center;
-        margin: 0 auto;
-      }
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
 
-      .body2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Optional: centers items horizontally */
-        justify-content: center;
-        margin: 0 auto;
-      }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
 
-      .banner {
-        text-align: center;
-        margin: 0 auto;
-        max-width: 300px;
-        border-bottom: 12px solid #004093;
-      }
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 
-      .box2 {
-        min-width: 250px;
-        max-width: 400px;
-      }
-}
+
+  .material-icons.md-16 { font-size: 16px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
 
 
 html {
@@ -188,9 +203,102 @@ ul li {
 }
 
 .logo {
-    padding-left: 7px;
+    padding-right: 7px;
 
 }
+
+
+
+.pepe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.navEmail{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.searchBar {
+    width: 60%;
+    height: 65%;
+    border: 1px solid rgb(60, 60, 60);
+    background-color: #ededed;
+    border-radius: 50px;
+}
+
+
+.activeButton {
+    width: 6rem;
+    height: 60%;
+    border: 1px solid rgb(60, 60, 60);
+    background-color: #dfdfdf;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center;
+    font-size: .8rem;
+    position: relative;
+
+}
+
+.Activetiptext {
+    z-index: 2;
+
+    width: 190px;
+    height: 200px;
+    background-color: rgb(234, 234, 234);
+    text-align: left;
+    padding: 3px 0 15px ;
+    border-radius: 5px;
+    margin-left: 2rem;
+    border: 2px solid rgb(143, 143, 143);
+    position: absolute;
+    top: 50px;
+    left: -30%; 
+    opacity: 0; /* Hidden by default */
+    display: none; /* Ensures it doesn't take up space */
+    transition: opacity 0.3s ease;
+    /* transform: translateX(1.5rem); */
+    /* opacity: 0; /* Initially hidden */
+    /* transition: opacity .2s ease, visibility 0.1s ease; /* Smooth fade-in effect */
+    /* transition-delay: .5s;  */
+
+}
+
+
+
+  .Activetiptext.visible {
+    opacity: 1; /* Fully visible */
+    display: block; /* Becomes visible when the "visible" class is added */
+  }
+
+.ActiveToolBox p {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+
+.activeButton:hover{
+    background-color: #c5c5c5;
+    cursor: pointer;
+}
+
+
+.radioButton {
+    margin-right: .3rem;
+}
+.Active-text {
+    display: block; /* Default display */
+  }
 
 
 
@@ -200,13 +308,13 @@ ul li {
     display: flex;
     align-items: center; /* Centers vertically */
     justify-content: center;
-    background-color: #ececec;
+    background-color: #ffffff;
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-top-left-radius: 6px;
-    margin-top: 55px;
+
 
 
 }
@@ -342,7 +450,7 @@ ul li {
 
 
 .label {
-    font-size: .6rem;
+    font-size: .8rem;
     margin: 0px auto;
     padding: 0px;
 }
@@ -370,3 +478,60 @@ ul li {
     }
 }
 
+@media (max-width: 900px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Optional: centers items horizontally */
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .body2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Optional: centers items horizontally */
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .banner {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 12px solid #004093;
+      }
+
+      .box2 {
+        min-width: 250px;
+        max-width: 400px;
+      }
+
+      .build{
+        min-width: 400px;
+        margin-bottom: 3rem;
+      }
+
+      .searchBar {
+        height: 60%;
+        width: 60%;
+    }
+
+     .activeButton {
+        height: 60%;
+        width: 19%;
+        margin-left: 1rem;
+    }
+
+    .Active-text {
+        display: none; /* Hide when screen is less than 900px */
+      }
+
+    .radioButton {
+        margin-left: 1rem;
+    }
+
+    .dropDown {
+        margin-right: 1rem;
+    }
+}
