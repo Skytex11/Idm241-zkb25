@@ -22,6 +22,7 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+
   
 
     /* Support for all WebKit browsers. */
@@ -44,51 +45,140 @@
 
 
 
+  .cantarell-regular {
+    font-family: "Cantarell", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cantarell-bold {
+    font-family: "Cantarell", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+
+
+
 html {
-    background-color: #CDFEFF;
+    background-color: #fffbcd;
+    /* display: flex; /* Enable Flexbox */
+    /* justify-content: center; /* Center horizontally */
+    /* align-items: center; */ 
 }
 
 body {
     margin: 0px;
     font-family: "Cantarell", sans-serif;
+
 }
 
 .banner {
     text-align: center;
     margin: 0 auto;
-    max-width: 450px;
-    border-bottom: 12px solid #004093;
+    max-width: 750px;
+    background-color: white;
+    margin-top: 0;
+    border: 3px solid #004093;
+    border-radius: 3px;
+    border-top: none;
+
 }
 
-h1{
-    /* margin-block-start: 0.67em;
-    margin-block-end: 0.17em; */
+.banner h3 {
+    font-size: 2rem;
+    color: #004093;
     font-family: "Concert One", sans-serif;
+
+}
+.header {
+    text-align: center;
+    margin: 0 auto;
+
 }
 
-h3 {
-    margin-block-start: 0.17em;
-    margin-block-end: 0.47em;
-    font-family: "Concert One", sans-serif;
+.header img{
+    height: 80px;
+    width: 105px;
+
 }
 
-.body {
-    background-color: #79DBDC;
-    width: 95%;
+
+.header h1{
+    font-family: "Cantarell", sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.googleLink {
+    color: black; /* Default color */
+    transition: transform 0.1s ease, color 0.2s ease; /* Smooth transition for both scaling and color */
+    text-decoration: none; /* Remove underline initially */
+}
+
+.googleLink:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: rgb(200, 49, 49); /* Change color to red on hover */
+}
+
+
+.blueBox{
     display: flex;
-    flex-direction: row wrap;
-    justify-content:space-around;
-    height: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
+    max-width: 850px;
+    justify-content: center;
+    background-color: #004093;
+    border-radius: 3px;
+    margin-bottom: 45px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    padding-bottom: 50px;
-    /* overflow: hidden; */
+    padding: 15px;
+}
 
 
+
+.build {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 850px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    margin: 0px auto;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.line {
+    border-top: 10px solid white;
+    background-color: #004093;
+    height: 15px;
+    width: 100%;
 
 }
+
+
+.info{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-top: 25px;
+    font-family: "Cantarell", sans-serif;
+}
+
+
+
+
 
 .body2{
     display: flex;
@@ -99,6 +189,28 @@ h3 {
     align-items: center;
 
 
+}
+
+
+
+.bb {
+    background-color: white;
+    max-width: 850px;
+    width: 700px;
+    border-radius: 7px;
+    padding: 20px;
+    border: 3px solid #004093;
+    margin-bottom: 20px;
+    box-shadow: 11px 15px #8FB8EC;
+
+
+
+}
+
+
+.bb {
+    overflow-y: auto;
+    height: 250px;
 }
 
 
@@ -124,7 +236,7 @@ h3 {
 
 .box {
     overflow-y: auto;
-    height: 420px;
+    height: 200px;
 }
 
 .box h4,ul {
@@ -160,31 +272,9 @@ ul li {
     margin-bottom: 2px;
 }
 
-#YtLink {
-    color: #fff;
 
-}
 
-#video {
-    text-align: center;
-    margin: 0px auto;
 
-}
-
-.build {
-
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    max-width: 700px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    margin: 0px auto;
-    margin-top: 20px;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .sidebar{
     display: flex;
@@ -569,12 +659,57 @@ ul li {
         margin: 0 auto;
       }
 
-      .banner {
+    .banner {
         text-align: center;
         margin: 0 auto;
-        max-width: 300px;
-        border-bottom: 12px solid #004093;
-      }
+        max-width: 425px;
+        
+      } 
+
+      .banner h3 {
+        font-size: 1.5rem;
+    
+    }
+    
+
+    .header h1{
+        padding-top: 20px;
+        font-size: 2rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .header img{
+        height: 75px;
+        width: 100px;
+    
+    }
+    
+    .line {
+        border-top: 7px solid white;
+        background-color: #004093;
+        height: 11px;
+        width: 100%;
+    
+    }
+
+    .bb {
+        background-color: white;
+        max-width: 850px;
+        width: 400px;
+        border-radius: 7px;
+        padding: 20px;
+        border: 3px solid #004093;
+        margin-bottom: 20px;
+        box-shadow: 7px 10px #8FB8EC;
+    
+    }
+
+    .bb {
+        overflow-y: auto;
+        height: 200px;
+    }
 
       .box2 {
         min-width: 250px;
@@ -583,7 +718,6 @@ ul li {
 
       .build{
         min-width: 400px;
-        margin-bottom: 3rem;
       }
 
       .searchBar {

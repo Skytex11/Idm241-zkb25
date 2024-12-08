@@ -15,10 +15,11 @@
 
 html {
     background-color: #CDFEFF;
+
 }
 
 body {
-    margin: 0px;
+    margin: 0 auto;
     font-family: "Cantarell", sans-serif;
 }
 
