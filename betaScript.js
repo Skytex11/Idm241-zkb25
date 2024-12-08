@@ -160,7 +160,7 @@ meet.addEventListener('click', () => {  // Select the element
 
 
 ActiveButton.addEventListener("click", (event) => {
-    // Toggle visibility of the modal
+
     ActiveToolBox.style.display = ActiveToolBox.classList.contains("visible") ? "none" : "block";
     setTimeout(() => {
         ActiveToolBox.classList.toggle("visible");
@@ -169,7 +169,6 @@ ActiveButton.addEventListener("click", (event) => {
 });
 
 document.addEventListener("click", () => {
-    // Close the modal if it's visible
     if (ActiveToolBox.classList.contains("visible")) {
         ActiveToolBox.classList.remove("visible");
         setTimeout(() => {
@@ -178,16 +177,23 @@ document.addEventListener("click", () => {
     }
 });
 
+helpButton.addEventListener("click", () => {
+    if (ActiveToolBox.classList.contains("visible")) {
+        ActiveToolBox.classList.remove("visible");
+        setTimeout(() => {
+            ActiveToolBox.style.display = "none";
+        }, 600); 
+    }
+});
+
+
 ActiveToolBox.addEventListener("click", (event) => {
-    
     event.stopPropagation();
 });
 
 
-
-
   helpButton.addEventListener("click", (event) => {
-    // Toggle visibility of the modal
+
     SupportToolBox.style.display = SupportToolBox.classList.contains("visible") ? "none" : "block";
     setTimeout(() => {
         SupportToolBox.classList.toggle("visible");
@@ -196,16 +202,23 @@ ActiveToolBox.addEventListener("click", (event) => {
 });
 
 document.addEventListener("click", () => {
-    // Close the modal if it's visible
     if (SupportToolBox.classList.contains("visible")) {
         SupportToolBox.classList.remove("visible");
         setTimeout(() => {
             SupportToolBox.style.display = "none";
-        }, 600); // Matches CSS transition
+        }, 600); 
+    }
+});
+
+ActiveButton.addEventListener("click", () => {
+    if (SupportToolBox.classList.contains("visible")) {
+        SupportToolBox.classList.remove("visible");
+        setTimeout(() => {
+            SupportToolBox.style.display = "none";
+        }, 600);
     }
 });
 
 SupportToolBox.addEventListener("click", (event) => {
-    // Prevent modal from closing when clicking inside
     event.stopPropagation();
 });
