@@ -1,0 +1,16 @@
+main {
+    background-color: white;
+    border: 15px;
+    margin: 90px 90px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+article {
+    padding: 50px 50px;
+}
