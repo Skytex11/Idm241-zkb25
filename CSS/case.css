@@ -1,7 +1,7 @@
 main {
     background-color: white;
     border: 15px;
-    margin: 90px 90px;
+    margin: 150px 150px;
 }
 
 h1{
@@ -13,4 +13,22 @@ h1{
 
 article {
     padding: 50px 50px;
+}
+
+img {
+    
+    height: 400px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
